@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.datepicker {
+    position: relative;
+    width: 250px;
+}
+
+.datepicker-input {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+}
+
+.datepicker-input input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+
+.icono-calendario {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.calendario {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    margin-top: 5px;
+}
+
+.header-calendario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-calendario button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tabla-calendario {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.tabla-calendario th, 
+.tabla-calendario td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.tabla-calendario td {
+    width: 14.28%;
+    height: 40px;
+    cursor: pointer;
+}
+
+.tabla-calendario td:hover {
+    background-color: #e6e6e6;
+}

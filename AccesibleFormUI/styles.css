@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor-formulario {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    max-width: 100%;
+}
+
+.formulario-perfil {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+.campo-contrasena {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.boton-mostrar {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.mensaje-error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.boton-actualizar {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.boton-actualizar:hover {
+    background-color: #333;
+}
+
+.progreso-perfil {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.progreso {
+    width: 70px;
+    height: 70px;
+    border: 5px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+.progreso span {
+    font-weight: bold;
+}
+
+.lista-tareas {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.lista-tareas li {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.lista-tareas li s {
+    color: #999;
+}
