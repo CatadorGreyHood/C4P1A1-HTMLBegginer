@@ -1,0 +1,115 @@
+/* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contenido principal */
+main {
+    margin-top: 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+p, ul {
+    margin-bottom: 15px;
+}
+
+.testimonios .testimonial {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilos responsivos */
+@media (min-width: 768px) {
+    .proyectos, .experiencia, .educacion, .testimonios {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .proyectos ul, .experiencia p, .educacion ul, .testimonios {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .proyectos ul {
+        max-width: 300px;
+    }
+}
